@@ -1,0 +1,61 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/Croatia.jpeg')}}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Hi, I'm Enrico</h1>
+            <span class="subheading">My portfolio, my journey, my passions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="middle-container">
+                  <div class="profile">
+                    <img src="" alt="">
+                    <h2>Hello.</h2>
+                    <p>My name is Enrico, I'm a mechanical Engineer passioned about hydrogen, data science and machine learning. If you want to know more about me please visit my <a href="{{url_for('about')}}">"about me"</a> page.</p>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-lg-12 skill-row">
+                      <h2>My Skills.</h2>
+                    </div>
+                    <div class="col-lg-4">
+                      <img  src="static/img/edit-bg.jpg" alt="3d-img" width="100%" style="padding-top: 40px;">
+                    </div>
+                    <div class="col-lg-8">
+                      <h3>3D Design</h3>
+                      <p class="three_d_skill_description">At the university I followed a course called "Advanced industrial Modelling" with CREO PARAMETRIC. There I learned how to model multi-curvature objects. If you want to see some of my jobs click here.<br>After I graduated I started following some courses about a 3D software design called "OnShape". If you want to know more click here.</p>
+                    </div>
+                    <div class="col-lg-8">
+                      <h3>Python and Data Science</h3>
+                      <p class="chilli_skill_description">With the start of the pandemic I started studying Python on my own. I got so passionate about the topic that I started to dig deeper in python and its potential. I then started learning more about Pandas Library and Data Science. I recently started studying Machine learning and It's problem solving approaches</p>
+                    </div>
+                    <div class="col-lg-4">
+                      <img  src="static/img/edit-bg.jpg" alt="3d-img" width="100%" style="padding-top: 40px;">
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="contact-me">
+                    <h2>Get In Touch</h2>
+                    <h3>If you too are interested on these topics contact me here.</h3>
+                    <p>I want to improve my knowledge on a lot of different subjects and improve my problem solving abilities.</p>
+                    <a class="btn" href="mailto:name@email.com" style="margin-top: 50px; margin-bottom: 80px;">CONTACT ME</a>
+                  </div>
+                </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+{% include "footer.html" %}
